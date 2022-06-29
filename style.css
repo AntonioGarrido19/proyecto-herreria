@@ -67,7 +67,7 @@ header {
 }
 
 .nav__li:hover {
-    transform: translateY(-10px);
+    transform: translateY(-3px);
 }
 
 .nav__a {
