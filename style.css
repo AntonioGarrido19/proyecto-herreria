@@ -62,15 +62,18 @@ header {
     align-items: flex-end;
     justify-content: space-evenly;
     padding: 0px 1rem;
+    transition: transform 0.3s;
 
+}
+
+.nav__li:hover {
+    transform: translateY(-10px);
 }
 
 .nav__a {
-    color: white;
     border-bottom: solid 1px white;
-
+    color: white;
 }
-
 
 /* Banner e info */
 
@@ -155,7 +158,6 @@ header {
     width: 100%;
     height: 100%;
     background-color: rgb(247, 243, 243);
-
 }
 
 .ultimostrabajos__h1 {
@@ -220,6 +222,10 @@ header {
     color: blue;
     border-bottom: blue;
     font-size: 4vh;
+    transition: 0.3s;
+}
+.footer a:hover {
+    color: white;
 }
 
 .contact {
@@ -266,7 +272,14 @@ header {
     background-color: white;
     font-weight: bold;
     border-radius: 20%;
-padding: 1%;
+    padding: 1%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact__button:hover {
+    background-color: rgb(64, 64, 245);
+    
 }
 
 span {
