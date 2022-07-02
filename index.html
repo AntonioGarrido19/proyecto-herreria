@@ -5,13 +5,43 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css">
     <title>PRO-METAL</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous"/>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="./style.css"/>
+
 </head>
 
 <body>
     <header>
-        <nav class="nav">
+        <nav class="navbar navbar-expand-lg bg-grey">
+            <div class="container">
+              <a class="navbar-brand mt-2" href="#">PRO-METAL</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto mt-5">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="./index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./contacto.html">Contacto</a>
+                  </li>
+                  <li class="nav-item">
+                   <a class="nav-link" href="./cerramientos-hierro.html">Cerramientos en hierro</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./cerramientos-madera.html">Cerramientos en hierro y madera</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        <!-- <nav class="nav">
             <h1 class="nav__logo"> PRO-METAL</h1>
 
             <ul class="nav__ul">
@@ -19,10 +49,10 @@
                 <li class="nav__li"><a href="./contacto.html" class="nav__a">Contacto</a></li>
                 <li class="nav__li"><a href="./cerramientos-hierro.html" class="nav__a">Cerramientos en hierro</a></li>
                 <li class="nav__li"><a href="./cerramientos-madera.html" class="nav__a">Cerramientos en hierro y
-                        madera</a></li>
-            </ul>
-            <span>[Hamburguesa]</span>
-        </nav>
+                        madera</a></li> -->
+            <!-- </ul> -->
+            <!-- <span>[Hamburguesa]</span> -->
+        <!-- </nav> -->
     </header>
 
     <main>
@@ -32,27 +62,71 @@
                 <div class="info1__conteiner">
                     <h1>Acerca de nosotros</h1>
                     <p>Somos una empresa que se dedica a la herrería en general con 30 años de experiencia en el
-                        rubro. No dudes en consultar.</p>
+                        rubro.</p>
                 </div>
 
-                <div class="info__container">
-                    <h1>Como y donde trabajamos</h1>
+                <div class="info__container"> 
                     <p>Realizamos trabajos en Montevideo, Ciudad de la Costa y alrededores, los presupuestos son sin
-                        cargo y los trabajos garantidos.
+                        cargo y los trabajos garantidos. No dudes en consultar.
                     </p>
                 </div>
+                </div>
+            </div>
+
+            <div class="banner__sub__container2">
+                <div class="card" style="width: 13rem;">
+                  <img src="./assets.e01/porton.corredizo.jpg" class="card-img-top" alt="porton corredizo">
+                  <div class="card-body">
+                    <h5 class="card-title">Automatización de portones</h5>
+                    <p class="card-text">¿Cansado de bajarte del auto para abrir el portón? Nosotros lo solucionamos.</p>
+                  </div>
+                </div>
+
+                  <div class="card" style="width: 13rem;">
+                    <img src="./assets.e01/rack.jpg" class="card-img-top" alt="rack">
+                    <div class="card-body">
+                      <h5 class="card-title">Muebles a medida</h5>
+                      <p class="card-text">¿Necesitas un rack para la TV y no encontrás del tamaño adecuado? Nosotros lo solucionamos.</p>
+                    </div>
+                  </div>
             </div>
         </section>
 
         <div>
             <h1 class="ultimostrabajos__h1">Ultimos trabajos</h1>
         </div>
-        <section class="ultimostrabajos__container">
+        <section class="carousel_container">
+        <div id="carouselExampleControls" class="carousel slide container" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./assets.e01/hierro.4.jpeg" class="d-block w-100" alt="hierro y madera 3">
+              </div>
+              <div class="carousel-item">
+                <img src="./assets.e01/hierro.y.madera.1.jpeg" class="d-block w-100" alt="hierro y madera 1">
+              </div>
+              <div class="carousel-item">
+                <img src="./assets.e01/reja.hierro.1.jpeg" class="d-block w-100" alt="reja hierro 1">
+              </div>
+              <div class="carousel-item">
+                <img src="./assets.e01/hierro.y.madera.5.jpeg" class="d-block w-100 height:" alt="hierro y madera 5">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+        <!-- <section class="ultimostrabajos__container">
             <img src="./assets.e01/hierro.4.jpeg" alt="hierro y madera 3" />
             <img src="./assets.e01/hierro.y.madera.1.jpeg" alt="hierro y madera 1" />
             <img src="./assets.e01/reja.hierro.1.jpeg" alt="reja hierro 1" />
             <img src="./assets.e01/hierro.y.madera.5.jpeg" alt="hierro y madera 5" />
-        </section>
+        </section> -->
     </main>
 
     <footer class="footer">
