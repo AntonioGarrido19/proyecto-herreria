@@ -21,7 +21,6 @@
 body {
     font-family: 'Cabin';
     color: white;
-    overflow-x: hidden;
 
 }
 
@@ -45,6 +44,10 @@ header {
 color: rgb(121, 121, 245);
 }
 
+.bg-grey a:active {
+    transform: scale(0.8);
+}
+
 .banner {
     height: 60vh;
     background-image: url(./assets.e01/pexels-recortada.jpg);
@@ -64,7 +67,8 @@ color: rgb(121, 121, 245);
     display: block;
     margin: auto;
     width: 100%;
-    height: 100%;
+    height: auto;
+    padding: 20px 0;
     background-image: linear-gradient(45deg, rgb(19, 19, 19), rgb(106, 105, 105))
 }
 
@@ -90,12 +94,6 @@ color: rgb(121, 121, 245);
     font-size: 1rem;
 }
 
-.info1__conteiner,
-.info__container {
-    margin: auto;
-    
-    
-}
 
 .info1__conteiner h1 {
     width: 70%;
@@ -211,6 +209,10 @@ color: rgb(121, 121, 245);
     color: white;
 }
 
+.footer a:active {
+    transform: scale(0.8);
+}
+
 .contact {
     display: flex;
     background-color: rgb(247, 243, 243);
@@ -262,11 +264,19 @@ color: rgb(121, 121, 245);
 
 .contact__button:hover {
     background-color: rgb(64, 64, 245);
-    
 }
 
-span {
-    display: none;
+.contact__button:active {
+    transform: scale(0.8);
+}
+
+.w-100 {
+    height: 400px !important;
+    width: 100%!important;
+    object-fit: cover;
+}
+.carousel_container{
+    margin-bottom: 50px;
 }
 
 @media (max-width: 904px) {
@@ -274,9 +284,6 @@ span {
         display: none;
     }
 
-    span {
-        display: inline-block;
-    }
 }
 
 
@@ -356,9 +363,6 @@ span {
         grid-template-rows: repeat(2, 1fr);
     }
     
-    /* .banner {
-        height: 60vh;
-    } */
 }
 
 @media (max-width: 420px) {
@@ -366,7 +370,4 @@ span {
         font-size: 150%;
     }
 
-    /* .banner {
-        height: 65vh;
-    } */
 }
