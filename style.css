@@ -14,12 +14,7 @@
 
 
 
-@media (max-width: 904px) {
-    .nav__ul {
-        display: none;
-    }
 
-}
 
 
 @media (max-width: 845px) {
@@ -48,21 +43,7 @@
     }
 }
 
-@media (max-width: 720px) {
-    .contact {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
 
-    .campo {
-        margin-left: 15%;
-    }
-
-    .contact__button {
-        margin-left: 15%;
-    }
-}
 
 @media (max-width: 625px) {
     
