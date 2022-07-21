@@ -36,7 +36,7 @@
     color: blue;
     border-bottom: blue;
     font-size: 4vh;
-    transition: 0.3s;
+    transition: $transicion;
 }
 .footer a:hover {
     color: white;

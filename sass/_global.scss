@@ -20,6 +20,28 @@
 body {
     font-family: 'Cabin';
     color: white;
-    background-color:rgb(247, 243, 243) ;
+    background-color: $colorFondo ;
 
+}
+
+.btn-titulobase {
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: auto;
+}
+
+.btn-titulotrabajos {
+    @extend .btn-titulobase;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+.btn-tituloinfo {
+    @extend .btn-titulobase;
+    text-decoration: underline;
 }

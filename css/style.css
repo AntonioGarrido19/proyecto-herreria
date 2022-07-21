@@ -18,6 +18,23 @@ body {
   color: white;
   background-color: #f7f3f3; }
 
+.btn-titulobase, .btn-titulotrabajos, .btn-tituloinfo {
+  text-decoration: none;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: auto; }
+
+.btn-titulotrabajos {
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem; }
+
+.btn-tituloinfo {
+  text-decoration: underline; }
+
 header {
   background-image: linear-gradient(45deg, #131313, #6a6969);
   position: sticky;
@@ -68,7 +85,7 @@ header {
   color: blue;
   border-bottom: blue;
   font-size: 4vh;
-  transition: 0.3s; }
+  transition: all 0.3s; }
 
 .footer a:hover {
   color: white; }
@@ -80,8 +97,7 @@ header {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   width: 100%;
-  height: 100%;
-  background-color: #f7f3f3; }
+  height: 100%; }
 
 .ultimostrabajos__h1 {
   display: flex;
@@ -90,8 +106,7 @@ header {
   padding-bottom: 2%;
   margin: 0;
   font-size: 2rem;
-  color: black;
-  background-color: #f7f3f3; }
+  color: black; }
 
 .ultimostrabajos__container img {
   display: inline;
@@ -102,9 +117,59 @@ header {
   border-radius: 10%;
   margin-bottom: 2%; }
 
+.descripcion-trabajos {
+  color: black;
+  font-size: 1.2rem;
+  margin: auto;
+  display: flex;
+  background-color: green;
+  text-decoration: line-through; }
+
+.descripcion-trabajos1 {
+  color: black;
+  font-size: 0.8rem;
+  margin: auto;
+  display: flex;
+  background-color: brown;
+  font-style: italic; }
+
+.link-whatsapp {
+  margin: 5px;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+  text-decoration: none;
+  background-color: #3ebf3e;
+  display: flex;
+  justify-content: center; }
+
+.link-twitter {
+  margin: 5px;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+  text-decoration: none;
+  background-color: #55acee;
+  display: flex;
+  justify-content: center; }
+
+.link-youtube {
+  margin: 5px;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+  text-decoration: none;
+  background-color: #f02929;
+  display: flex;
+  justify-content: center; }
+
+.botonesmaps__container {
+  display: flex;
+  flex-direction: column; }
+
 .banner {
   height: 60vh;
-  background-image: url(./assets);
+  background-image: url(../assets.e01/pexels-recortada.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -113,15 +178,14 @@ header {
   color: white;
   border-bottom-style: groove;
   overflow: hidden; }
-
-.banner__sub__container {
-  display: flex;
-  display: block;
-  margin: auto;
-  width: 100%;
-  height: auto;
-  padding: 20px 0;
-  background-image: linear-gradient(45deg, #131313, #6a6969); }
+  .banner__sub__container {
+    display: flex;
+    display: block;
+    margin: auto;
+    width: 100%;
+    height: auto;
+    padding: 20px 0;
+    background-image: linear-gradient(45deg, #131313, #6a6969); }
 
 .banner__sub__container2 {
   display: flex;
@@ -140,7 +204,7 @@ header {
 .banner__sub__container2 h5 {
   font-size: 1rem; }
 
-.info1__conteiner h1 {
+.info1__container h1 {
   width: 70%;
   font-size: 150%;
   font-weight: 900;
@@ -148,7 +212,7 @@ header {
   padding-top: 10%;
   padding-left: 1rem; }
 
-.info1__conteiner p {
+.info1__container p {
   width: 70%;
   font-size: 100%;
   padding: 1rem;
@@ -166,7 +230,22 @@ header {
 .carousel_container {
   height: 400px;
   overflow: hidden;
-  background-color: #f7f3f3;
+  background-color: #f7f3f3; }
+
+.carousel-inner {
+  height: 400px; }
+
+.w-100 {
+  height: 400px !important;
+  width: 100% !important;
+  object-fit: cover; }
+
+.carousel_container {
+  margin-bottom: 50px; }
+
+.carousel_container {
+  height: 400px;
+  overflow: hidden;
   margin-bottom: 50px; }
 
 .carousel-inner {
@@ -178,8 +257,7 @@ header {
   object-fit: cover; }
 
 .contact {
-  display: flex;
-  background-color: #f7f3f3; }
+  display: flex; }
 
 .contact__text {
   display: flex;
@@ -223,3 +301,57 @@ header {
 
 .contact__button:active {
   transform: scale(0.8); }
+
+@media (max-width: 904px) {
+  .nav__ul {
+    display: none; } }
+
+@media (max-width: 845px) {
+  .ultimostrabajos__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); }
+  .footer__h1 {
+    display: none; }
+  .banner {
+    height: 130vh; }
+  .banner__sub__container2 {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr); }
+  .info1__conteiner,
+  .info__container {
+    display: flex;
+    display: block; } }
+
+@media (max-width: 720px) {
+  .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .campo {
+    margin-left: 15%; }
+  .contact__button {
+    margin-left: 15%; } }
+
+@media (max-width: 625px) {
+  .banner {
+    display: flex;
+    flex-direction: column; }
+  .banner__sub__container h1 {
+    padding-top: 3%; }
+  .banner__sub__container p {
+    padding-bottom: 3%; }
+  .banner__sub__container2 {
+    display: flex; }
+  .container__footer {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 15%; } }
+
+@media (max-width: 480px) {
+  .banner__sub__container2 {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr); } }
+
+@media (max-width: 420px) {
+  .nav__logo {
+    font-size: 150%; } }
