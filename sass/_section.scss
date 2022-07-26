@@ -1,3 +1,7 @@
+.navbar-brand {
+    font-size: 2rem;
+}
+
 .banner {
     height: 60vh;
     background-image: url(../assets.e01/pexels-recortada.jpg);
@@ -30,7 +34,7 @@
     justify-content: space-evenly;
     color: black;
     font-size: 0.8rem;
-    height: 80%;
+    height: 100%;
 }
 
 .card {
@@ -41,6 +45,10 @@
     height: 40%;
 }
 
+.card h5 {
+    padding-top: 7%;
+    padding-bottom: 3%;
+}
 
 .banner__sub__container2 h5 {
     font-size: 1rem;
@@ -52,7 +60,7 @@
     font-size: 150%;
     font-weight: 900;
     margin: auto;
-    padding-top: 10%;
+    padding-top: 1%;
     padding-left: 1rem;
 }
 
